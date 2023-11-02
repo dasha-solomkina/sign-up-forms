@@ -6,41 +6,61 @@
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="flaticon3.png">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&display=swap">
+  </head>
 <body>
   <div class="left-bar">
     <div class="heading">
-      <img src="background1.jpg" alt="woman on the surfboard in the ocean">
+      <img src="logo11.png" alt="logo">
       <h1>SurfSoul</h1>
     </div>
-    <p>Photo credit add later</p>
+    <div id="credits">Photo by <a href="https://unsplash.com/@dylan_alcock?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dylan Alcock</a> on <a href="https://unsplash.com/photos/woman-in-blue-bikini-top-on-white-surfboard-in-the-sea-during-daytime-wV0ghe5SGwU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </div>
   </div>
   <div class="right-bar">
     <div class="intro">
-      <p>Ready to catch some waves? Join our exciting surfing classes and ride the tide with us! Whether you're a beginner or looking to improve your skills, our experienced instructors will have you hanging ten in no time. Don't miss out on the fun – sign up today!</p>
+      <p>Ready to catch some waves? Join our exciting surfing classes and ride the tide with us! Whether you're a beginner or looking to improve your skills, our experienced instructors will have you hanging ten in no time.</p>
+      <p>Don't miss out on the fun – sign up today!</p>
     </div>
     <form action="submit.php" method="post">
-      <div>
-        <label for="name">FIRST NAME*</label>
-        <input type="text" id="name" name="name" placeholder="Sasha" required>
-        <label for="surname">LAST NAME</label>
-        <input type="text" id="surname" name="surname" placeholder="Silva">
-        <label for="email">EMAIL*</label>
-        <input type="email" id="email" name="email" placeholder="sasha.silva@gmail.com" required>
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" id="phone" name="phone" placeholder="48112234455">
-        <label for="password">PASSWORD*</label>
-        <input type="password" id="password" name="password" required>
-        <label for="confirm-password">CONFIRM PASSWORD*</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
+      <div class="contact-form">
+        <div class="row">
+          <div class="cell">
+            <label for="name">First name*</label>
+            <input type="text" id="name" name="name" placeholder="Sasha" required>
+          </div>
+          <div class="cell">
+            <label for="surname">Last name</label>
+            <input type="text" id="surname" name="surname" placeholder="Silva">
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="sasha.silva@gmail.com" required>
+          </div>
+          <div class="cell">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="48112234455">
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="cell">
+            <label for="confirm-password">Confirm password*</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+        </div>
       </div>
       <div>
         <button type="submit">Sign up now!</button>
       </div>
     </form>
     <p>Already signed up? Manage your reservation</p>
-
-
   </div>
 </body>
 </html>

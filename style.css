@@ -1,0 +1,79 @@
+body {
+  height  : 100vh;
+  font-family: "Noto Sans Kawi", sans-serif;
+  font-size: 18px;
+  display: flex;
+  margin: 0;
+}
+
+.left-bar {
+  flex: 50%;
+  background-image: url(background1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.right-bar {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  gap: 40px;
+  justify-content: center;
+}
+
+img {
+  width: 100px;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 30%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  font-family: 'Agbalumo';
+  font-size: 60px;
+  margin: 10px 0 0;
+  font-size: 500;
+}
+
+#credits {
+  font-style: 700;
+  margin-top: auto;
+  align-self: center;
+  font-size: 12px;
+}
+
+a {
+  color: inherit;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border: 1px black solid;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  /* flex: 0 1 calc(20% - 20px); */
+  /* margin: 20px; */
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+}
