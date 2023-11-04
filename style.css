@@ -4,6 +4,7 @@ body {
   font-size: 18px;
   display: flex;
   margin: 0;
+  flex: 1 1 auto;
 }
 
 .left-bar {
@@ -11,10 +12,11 @@ body {
   background-image: url(background1.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   color: white;
+  /* flex: 1 1 auto; */
 }
 
 .right-bar {
@@ -62,11 +64,13 @@ a {
   flex-direction: column;
   padding: 25px 100px;
   box-shadow: 0px 1px 5px rgb(212, 210, 210);
+  flex: auto;
 }
 
 .cell {
   display: flex;
   flex-direction: column;
+  /* flex: auto; */
 }
 
 .row {
@@ -96,15 +100,15 @@ button {
   padding-right: 30px;
   border-radius: 5px;
   border: 1px solid #0b2d39;
-  /* box-shadow: 1px 1px 2px #0b2d39; */
   background-color: #2596BE;
-  color: white;
+  color: #0b2d39;
   font-weight: 700;
 }
 
 button:hover {
   cursor: pointer;
   transform: scale(1.01);
+  color: white;
 }
 
 .sign-up {
@@ -138,3 +142,6 @@ h2 {
   color: #0f3c4c;
 }
 
+input:not(:empty) {
+  background-color: red;
+}
