@@ -7,7 +7,7 @@ body {
 }
 
 .left-bar {
-  flex: 50%;
+  flex: 45%;
   background-image: url(background1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -18,12 +18,10 @@ body {
 }
 
 .right-bar {
-  flex: 50%;
+  flex: 55%;
   display: flex;
   flex-direction: column;
-  padding-left: 200px;
-  padding-right: 200px;
-  gap: 40px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -33,7 +31,7 @@ img {
 
 .heading {
   background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 30%;
+  margin-top: 20%;
   display: flex;
   padding: 20px;
   justify-content: center;
@@ -62,18 +60,81 @@ a {
 .contact-form {
   display: flex;
   flex-direction: column;
-  padding: 8px;
-  border: 1px black solid;
+  padding: 25px 100px;
+  box-shadow: 0px 1px 5px rgb(212, 210, 210);
 }
 
 .cell {
   display: flex;
   flex-direction: column;
-  /* flex: 0 1 calc(20% - 20px); */
-  /* margin: 20px; */
 }
 
 .row {
   display: flex;
-  gap: 50px;
+  gap: 80px;
+  margin-bottom: 20px;
 }
+
+.intro {
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+label {
+  font-size: 18px;
+  color: #313131;
+  margin-bottom: -5px;
+}
+
+button {
+  font-family: "Noto Sans Kawi", sans-serif;
+  font-size: 18px;
+  margin-left: 100px;
+  margin-top: 50px;
+  padding-top: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  border: 1px solid #0b2d39;
+  /* box-shadow: 1px 1px 2px #0b2d39; */
+  background-color: #2596BE;
+  color: white;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.sign-up {
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+.sign-up a {
+  text-decoration: none;
+  color: #0b2d39;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 3px;
+  border: 1px rgb(189, 187, 187) solid;
+}
+
+input:focus {
+  border: 1px #134b5f solid;
+  background-color: #fafafa;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+h2 {
+  color: #0f3c4c;
+}
+
